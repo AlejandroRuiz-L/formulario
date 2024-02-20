@@ -1,11 +1,22 @@
-let valor = 4;
 const ficha = document.getElementById("ficha");
-ficha.addEventListener('blur', function () { alert(ficha.value) });
-alert("algo");
-if (typeof valor === 'number') {
-  document.write("Es un número");
+const nombre = document.getElementById("nombre");
+const apellidos = document.getElementById("apellidos");
+const correo = document.getElementById("email");
+const tel = document.getElementById("tel");
+const skill = document.getElementById("skill");
+function evento_blur(elemento) {
+  elemento.addEventListener('blur', () => {
+    if (elemento.value == "") {
+      alert("Debe llenar el campo.")
+    } else {
+      if (isNumber(elemento.value)) {
+        alert("Es correcto")
+      } else { "No es correcto" }
+    }
+  })
 };
-if (ficha.value.length >= 4) {
-  alert("valor excedido")
-}
-console.log(typeof valor);
+evento_blur(ficha);
+evento_blur(nombre);
+evento_blur(apellidos);
+evento_blur(correo);
+evento_blur(tel);

@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/main.css">
-  <script src="main.js"></script>
   <title>Formulario JS</title>
 </head>
 
@@ -69,7 +68,7 @@
             <input type="tel" id="tel" name="user_phone" title="Ingresa tu número telefonico" pattern="[0-9]{10, 10}"
               maxlength="10" class="entrada" required />
           </div>
-          <div class="contenedor2">
+          <div class="contenedor2" title="Selecciona tu genero">
             <label for="genero">Genero:</label>
             <label for="hombre">Hombre</label>
             <input type="radio" id="hombre" name="genero" value="hombre" required />
@@ -78,9 +77,9 @@
             <label for="otro">Otro</label>
             <input type="radio" id="otro" name="genero" value="otro" />
           </div>
-          <div class="contenedor">
+          <div class="contenedor" title="Selecciona tu ciudad">
             <label for="ciudad">Ciudad:</label>
-            <select name="user_city" id="ciudad">
+            <select name="user_city" id="ciudad" required>
               <option value="bogota">Bogotá</option>
               <option value="bmanga">Bucaramanga</option>
               <option value="cali">Cali</option>
@@ -88,44 +87,46 @@
             </select>
           </div>
           <div class="contenedor">
-            <label for="skills">Seleccione minimo 3 habilidades:</label>
+            <label for="skill">Seleccione minimo 3 habilidades:</label>
             <div>
-              <input type="checkbox" id="HTML" name="HTML" />
+              <input type="checkbox" id="skill" name="HTML" />
               <label for="HTML">HTML</label>
             </div>
             <div>
-              <input type="checkbox" id="CSS" name="CSS" />
+              <input type="checkbox" id="skill" name="CSS" />
               <label for="CSS">CSS</label>
             </div>
             <div>
-              <input type="checkbox" id="JavaScript" name="JavaScript" />
+              <input type="checkbox" id="skill" name="JavaScript" />
               <label for="JavaScript">JavaScript</label>
             </div>
             <div>
-              <input type="checkbox" id="PHP" name="PHP" />
+              <input type="checkbox" id="skill" name="PHP" />
               <label for="PHP">PHP</label>
             </div>
             <div>
-              <input type="checkbox" id="JAVA" name="JAVA" />
+              <input type="checkbox" id="skill" name="JAVA" />
               <label for="JAVA">JAVA</label>
             </div>
             <div>
-              <input type="checkbox" id="SQL" name="SQL" />
+              <input type="checkbox" id="skill" name="SQL" />
               <label for="SQL">SQL</label>
             </div>
             <div>
-              <input type="checkbox" id="UML" name="UML" />
+              <input type="checkbox" id="skill" name="UML" />
               <label for="UML">UML</label>
             </div>
           </div>
-          <div>
-            <button type="submit" title="Enviar formulario">Enviar</button>
-            <button type="reset" title="Restablecer los campos">Restablecer</button>
+          <div class="card">
+            <button type="submit" title="Enviar formulario" class="boton">Enviar</button>
+            <button type="reset" title="Restablecer los campos" class="boton">Restablecer</button>
           </div>
         </form>
       </div>
     </section>
   </main>
+  <footer class="pie"></footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
