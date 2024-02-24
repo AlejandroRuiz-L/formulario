@@ -74,7 +74,7 @@ body{
   background-color: rgb(33, 67, 112);
 }
 input:invalid{
-  border: 2px dashed red;
+  border: 2px dashed salmon;
 }
 input:invalid:required {
   background-image: linear-gradient(to right, rgb(202, 170, 175), rgb(63, 101, 150));
